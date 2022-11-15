@@ -1,16 +1,26 @@
-# This is a sample Python script.
+# -*- coding: utf-8 -*-
+# @Time    : 2022/11/13
+# @Author  : zhangkai
+# @File    : main.py
+# @Software: PyCharm
+"""
+主函数，打开主界面
+"""
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import sys
+from PyQt5 import QtWidgets
+from PyQt5.QtGui import QIcon
+from qt_material import apply_stylesheet
+from Package import MainWindow
 
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    mywindow = MainWindow()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    mywindow.setWindowTitle("Physicaloptics_Fresnel")
+    mywindow.setWindowIcon(QIcon("./icon.ico"))
+    # 使用主题
+    # apply_stylesheet(app, theme='dark_zk.xml')
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    mywindow.show()
+    sys.exit(app.exec_())
