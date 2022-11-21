@@ -26,34 +26,12 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGraphicsView" name="graphicsView">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>90</y>
-      <width>600</width>
-      <height>600</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>600</width>
-      <height>600</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>600</width>
-      <height>600</height>
-     </size>
-    </property>
-   </widget>
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>660</x>
       <y>100</y>
-      <width>361</width>
+      <width>391</width>
       <height>461</height>
      </rect>
     </property>
@@ -88,18 +66,18 @@
      <attribute name="title">
       <string>法布里珀罗干涉仪</string>
      </attribute>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="et_lambda">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>130</x>
         <y>30</y>
-        <width>260</width>
+        <width>200</width>
         <height>36</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
-        <width>260</width>
+        <width>200</width>
         <height>36</height>
        </size>
       </property>
@@ -121,19 +99,25 @@
         <height>36</height>
        </size>
       </property>
+      <property name="text">
+       <string>532</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_7">
+     <widget class="QLineEdit" name="et_reflectivity">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>130</x>
         <y>90</y>
-        <width>260</width>
+        <width>200</width>
         <height>36</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
-        <width>260</width>
+        <width>200</width>
         <height>36</height>
        </size>
       </property>
@@ -154,20 +138,26 @@
         <width>260</width>
         <height>36</height>
        </size>
+      </property>
+      <property name="text">
+       <string>0.9</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_8">
+     <widget class="QLineEdit" name="et_distance">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>130</x>
         <y>150</y>
-        <width>260</width>
+        <width>200</width>
         <height>36</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
-        <width>260</width>
+        <width>200</width>
         <height>36</height>
        </size>
       </property>
@@ -188,20 +178,26 @@
         <width>260</width>
         <height>36</height>
        </size>
+      </property>
+      <property name="text">
+       <string>30</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit_9">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>130</x>
         <y>210</y>
-        <width>260</width>
+        <width>200</width>
         <height>36</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
-        <width>260</width>
+        <width>200</width>
         <height>36</height>
        </size>
       </property>
@@ -222,6 +218,351 @@
         <width>260</width>
         <height>36</height>
        </size>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>120</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>传播距离：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_SelectImg">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>280</y>
+        <width>200</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>260</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>260</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>260</width>
+        <height>36</height>
+       </size>
+      </property>
+      <item>
+       <property name="text">
+        <string>干涉平面图</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>干涉三维图</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>中心线曲线</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>280</y>
+        <width>120</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>显示图像：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_Show_FP">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>350</y>
+        <width>260</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>显示图像</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>120</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>光波波长：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>120</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>反射率：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>120</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>120</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>传待定：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>86</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>86</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>86</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>68</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>68</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>nm</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>150</y>
+        <width>86</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>86</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>86</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>68</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>68</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>mm</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
      </widget>
     </widget>
@@ -425,17 +766,17 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>820</x>
-      <y>552</y>
-      <width>141</width>
-      <height>71</height>
+      <x>30</x>
+      <y>80</y>
+      <width>601</width>
+      <height>601</height>
      </rect>
     </property>
-    <property name="text">
-     <string>PushButton</string>
+    <property name="title">
+     <string/>
     </property>
    </widget>
   </widget>
