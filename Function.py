@@ -55,3 +55,20 @@ def Interference(mylambda=532e-6, z=30, reflectivity=0.9):
     # print(np.max(np.exp(1j * k * RR)))
     Ic = I[int(len(yy) / 2)] / I0[int(len(yy) / 2)]
     return XX, YY, I, xx, Ic
+
+
+def plane_wave(mylambda,A,alpha,bata,z):
+
+    k = 2 * np.pi / mylambda  #
+
+    alpha = alpha * np.pi / 180
+    bata = bata * np.pi / 180
+    Lx = 3 # 接收屏
+    Ly = 3
+    dd = 2e-3  # 像素大小
+    xx = np.arange(-Lx / 2, (Lx / 2) , dd)
+    yy = np.arange(-Ly / 2, (Ly / 2) , dd)
+    XX, YY = np.meshgrid(xx, yy)
+    cos_gama=np.sqrt(np.abs(1-np.cos(alpha)**2-np.cos(bata)**2))
+    E=A*np.exp(1j*k*(np.cos(alpha)*XX+np.cos(bata)*YY+cos_gama*z))
+    return E
